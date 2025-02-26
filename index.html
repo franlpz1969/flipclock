@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Flip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reloj Flip</h1>
+        <div id="clock"></div>
+
+        <!-- Selector de Zona Horaria -->
+        <label for="timezone">Selecciona tu Zona Horaria:</label>
+        <select id="timezone">
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">Nueva York</option>
+            <option value="Europe/London">Londres</option>
+            <option value="Asia/Tokyo">Tokio</option>
+            <option value="Australia/Sydney">Sídney</option>
+        </select>
+
+        <!-- Selector de Color -->
+        <label for="color">Selecciona el Color del Reloj:</label>
+        <input type="color" id="color" value="#000000">
+
+        <!-- Configuración de Alarma -->
+        <div>
+            <label for="alarm-time">Configura una Alarma:</label>
+            <input type="time" id="alarm-time">
+            <button id="set-alarm">Establecer Alarma</button>
+        </div>
+
+        <p id="alarm-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
